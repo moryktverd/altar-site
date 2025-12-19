@@ -31,16 +31,36 @@
       telegram → archive of signs
     </a>
   </footer>
-<!-- Плавающая кнопка Telegram в правом нижнем углу -->
+<!-- Плавающая кнопка Telegram с анимацией пульсации -->
 <a href="https://t.me/Rumbelskoy" target="_blank" rel="noopener" 
    style="position: fixed; bottom: 20px; right: 20px; 
           background-color: #0088cc; color: white; 
           width: 60px; height: 60px; border-radius: 50%; 
           font-size: 30px; text-align: center; line-height: 60px; 
           box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
-          z-index: 1000; text-decoration: none;">
+          z-index: 1000; text-decoration: none;
+          animation: pulse 2s infinite;">
   💬
 </a>
+
+<!-- Анимация пульсации -->
+<style>
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,136,204,0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+}
+</style>
 </body>
 </html>
+
 
